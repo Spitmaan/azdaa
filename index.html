@@ -890,7 +890,7 @@ html.MobilePreviewFrame { -ms-overflow-style: none; scrollbar-width: none; }
 					</tr>
 					<tr>
 						<td style="padding: 1rem 0;" valign="middle">
-						<p style="font-weight: bold; font-size: 1.5rem; line-height: 100%; margin: 0; padding-bottom: .5rem; text-align: center;">Mehran Moradi</p>
+						<p id="p0" style="font-weight: bold; font-size: 1.5rem; line-height: 100%; margin: 0; padding-bottom: .5rem; text-align: center;">Mehran Moradi</p>
 
 						<p id="p1" style="font-weight: bold; font-size: 1.5rem; line-height: 100%; margin: 0; text-align: center;" valign="middle"></p>
 						</td>
@@ -1473,14 +1473,14 @@ var today = new Date();
 
 var date = today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' + today.getFullYear();
 
-document.getElementById("p1").innerHTML = "date";
+document.getElementById("p1").innerHTML = date;
 	
 const queryString = window.location.search;
 console.log(queryString);
 
 const urlParams = new URLSearchParams(queryString);
 const name = urlParams.get('name')
-document.getElementById("p1").innerHTML = name;
+document.getElementById("p0").innerHTML = name;
 </script>
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
